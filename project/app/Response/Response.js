@@ -11,7 +11,6 @@ const AuthorizationsResponse = () => (
     <Transaction />
     <Card>
       <CardBody>
-        <Patient />
         <Status />
       </CardBody>
     </Card>

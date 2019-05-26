@@ -3,7 +3,7 @@ import { AvForm } from 'availity-reactstrap-validation';
 import { Button, Card, CardBody } from 'reactstrap';
 import { navigate } from '@reach/router';
 
-import { Agreement, Patient, Provider } from './components';
+import { Agreement, Provider } from './components';
 import { Footer, Header } from '../components';
 
 class AuthorizationsRequest extends Component {
@@ -14,10 +14,11 @@ class AuthorizationsRequest extends Component {
   render() {
     return (
       <div className="container-sm">
+        <Header />
         <AvForm onValidSubmit={this.submit}>
           <Card>
             <CardBody>
-              <Patient />
+              <Provider />
               <Agreement />
               <hr className="divider" />
               <div className="form-controls form-controls-card">

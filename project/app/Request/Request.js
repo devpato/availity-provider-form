@@ -3,7 +3,7 @@ import { AvForm } from 'availity-reactstrap-validation';
 import { Button, Card, CardBody } from 'reactstrap';
 import { navigate } from '@reach/router';
 
-import { Agreement, Patient, Provider } from './components';
+import { Agreement, Provider } from './components';
 import { Footer, Header } from '../components';
 
 class AuthorizationsRequest extends Component {
@@ -19,7 +19,6 @@ class AuthorizationsRequest extends Component {
           <Card>
             <CardBody>
               <Provider />
-              <Patient />
               <Agreement />
               <hr className="divider" />
               <div className="form-controls form-controls-card">

@@ -2,7 +2,7 @@ import React from 'react';
 import { observer, inject } from 'mobx-react';
 import { Card, CardBody } from 'reactstrap';
 import { Footer, Header } from '../components';
-import { Patient, Status, Transaction } from './components';
+import { Status, Transaction } from './components';
 import propTypes from './props';
 
 const AuthorizationsResponse = () => (
@@ -11,7 +11,6 @@ const AuthorizationsResponse = () => (
     <Transaction />
     <Card>
       <CardBody>
-        <Patient />
         <Status />
       </CardBody>
     </Card>

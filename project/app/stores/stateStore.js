@@ -2,11 +2,13 @@ import { extendObservable, action, set } from 'mobx';
 
 const emptyState = {
   request: {
-    organization: {
-      customerId: null,
-    },
     provider: null,
-    memberId: null,
+    fullName: null,
+    npiID: null,
+    businessAdress: null,
+    telephone: null,
+    email: null,
+    acceptTerms: false,
     acceptTerms: false,
   },
 };
