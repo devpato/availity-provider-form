@@ -6,12 +6,12 @@ import { AvField } from 'availity-reactstrap-validation';
 
 const Provider = ({ stateStore: { request }, appStore }) => {
   const { provider } = request;
-  console.log(request);
-  const { fullName } = request;
-  const { npiID } = request;
-  const { businessAdress } = request;
-  const { telephone } = request;
-  const { email } = request;
+  console.log(provider);
+  const { fullName } = provider;
+  const { npiID } = provider;
+  const { businessAdress } = provider;
+  const { telephone } = provider;
+  const { email } = provider;
 
   return (
     <fieldset>

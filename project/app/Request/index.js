@@ -4,17 +4,16 @@ import { Button, Card, CardBody } from 'reactstrap';
 import { navigate } from '@reach/router';
 
 import { Agreement, Provider } from './components';
-import { Footer, Header } from '../components';
+import { Footer } from '../components';
 
 class AuthorizationsRequest extends Component {
   submit = () => {
-    navigate(`/response`);
+    console.log('form submitted');
   };
 
   render() {
     return (
       <div className="container-sm">
-        <Header />
         <AvForm onValidSubmit={this.submit}>
           <Card>
             <CardBody>
